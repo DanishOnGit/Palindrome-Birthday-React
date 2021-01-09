@@ -45,6 +45,9 @@ box-shadow: 2px 2px 5px 1px black,-2px -2px 5px 1px rgb(245, 245, 245)
   
   transition: 0ms;
 }
+img{
+  background-color: var(--secondary-color)
+}
 
 .outputText{
 padding: 1rem;
