@@ -25,25 +25,17 @@ input{
   
 }
 .check{
-  /* margin-top: 1rem; */
+font-weight: 700;
 padding: 0.5rem 1rem;
 border-radius:0.5rem;
 background-color: rgb(173, 169, 169) ;
 border:none;
 outline: none;
+margin: 1rem 1rem;
 color: var(--primary-color);
 box-shadow: 2px 2px 5px 1px black,-2px -2px 5px 1px rgb(245, 245, 245)
 }
-.outerBtn{
-  margin-top: 1rem;
-padding: 0.5rem 1rem;
-border-radius: 0.5rem;
-border: none;
-/* border: 1px solid var(--secondary-color); */
-background-color: var(--secondary-color);
-box-shadow: 2px 2px  4px black inset;
-margin-bottom: 1rem;
-}
+
 .check:hover{
   color: white;
   transition: 200ms
@@ -60,5 +52,10 @@ border: 2px solid var(--primary-color);
 border-radius: 1rem;
 max-width: 600px;
 margin: auto;
+}
+@media screen  and  (max-width:600px){
+.App{
+  margin-top:1rem;
+}
 }
 

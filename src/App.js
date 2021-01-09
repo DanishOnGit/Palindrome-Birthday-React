@@ -15,7 +15,7 @@ setOutputDiv(<img style={{marginTop:"1.5rem"}}src={clock} alt="Clock gif"></img>
 setTimeout(() => {
   checkPalindrome();
   
-}, 2000);
+}, 3000);
 
 }else{
   setOutputDiv(<p>Please enter date!</p>)
@@ -79,9 +79,9 @@ return true;
       <p className="instruction">It will check your the birthdate in dd-mm-yyyy, mm-dd-yy, m-dd-yyyy, yyyy-mm-dd formats.</p>
       
       <input onChange={(event)=>{date=event.target.value}} required type="date" /><br/>
-      <button className="outerBtn">
+      
       <button className="check" onClick={btnClickHandler} >Check</button>
-      </button>
+      
        <div className="outputDiv">{outputDiv}</div>
     
       
