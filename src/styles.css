@@ -9,6 +9,7 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+margin-top: 20vh;
 }
 body{
   background-color:var(--secondary-color);
@@ -41,6 +42,7 @@ border: none;
 /* border: 1px solid var(--secondary-color); */
 background-color: var(--secondary-color);
 box-shadow: 2px 2px  4px black inset;
+margin-bottom: 1rem;
 }
 .check:hover{
   color: white;
@@ -51,10 +53,12 @@ box-shadow: 2px 2px  4px black inset;
   
   transition: 0ms;
 }
-.outputDiv{
+
+.outputText{
 padding: 1rem;
-margin-top: 1rem;
 border: 2px solid var(--primary-color);
+border-radius: 1rem;
 max-width: 600px;
+margin: auto;
 }
 

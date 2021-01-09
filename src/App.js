@@ -36,7 +36,7 @@ function checkPalindrome(){
    else{
      finalOutput=`Oh noo! Your birthday is not a palindrome in any format`
    }
-   setOutputDiv(finalOutput)
+   setOutputDiv(<p className="outputText">{finalOutput}</p>)
 
 }
 
