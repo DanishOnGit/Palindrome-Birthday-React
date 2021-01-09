@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+input{
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  
+}
+.check{
+  margin-top: 1rem;
+padding: 0.5rem 1rem;
+border-radius:0.5rem;
+background-color: rgb(250, 247, 79);
+border:none;
+color: rgb(30, 90, 160);
+box-shadow: 2px 2px 5px 1px grey,-2px -2px 5px 1px rgb(245, 245, 245)
+}
+
+
