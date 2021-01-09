@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
-import clock from "./clock.gif"
+import clock from "./clock.gif";
+
 var date,finalOutput;
 
 export default function App() {
@@ -78,8 +79,10 @@ return true;
       <p className="instruction">It will check your the birthdate in dd-mm-yyyy, mm-dd-yy, m-dd-yyyy, yyyy-mm-dd formats.</p>
       
       <input onChange={(event)=>{date=event.target.value}} required type="date" /><br/>
+      <button className="outerBtn">
       <button className="check" onClick={btnClickHandler} >Check</button>
-       <div>{outputDiv}</div>
+      </button>
+       <div className="outputDiv">{outputDiv}</div>
     
       
     </div>

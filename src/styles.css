@@ -3,25 +3,58 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  --primary-color: rgb(30, 90, 160);
+  --secondary-color: rgb(173, 169, 169);
 }
 .App {
   font-family: sans-serif;
   text-align: center;
 }
+body{
+  background-color:var(--secondary-color);
+}
+h1{
+  color: var(--primary-color);
+}
 input{
   padding: 0.5rem;
   border-radius: 0.5rem;
   border: 1px solid black;
+  margin-top: 1rem;
   
 }
 .check{
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 padding: 0.5rem 1rem;
 border-radius:0.5rem;
-background-color: rgb(250, 247, 79);
+background-color: rgb(173, 169, 169) ;
 border:none;
-color: rgb(30, 90, 160);
-box-shadow: 2px 2px 5px 1px grey,-2px -2px 5px 1px rgb(245, 245, 245)
+outline: none;
+color: var(--primary-color);
+box-shadow: 2px 2px 5px 1px black,-2px -2px 5px 1px rgb(245, 245, 245)
 }
-
+.outerBtn{
+  margin-top: 1rem;
+padding: 0.5rem 1rem;
+border-radius: 0.5rem;
+border: none;
+/* border: 1px solid var(--secondary-color); */
+background-color: var(--secondary-color);
+box-shadow: 2px 2px  4px black inset;
+}
+.check:hover{
+  color: white;
+  transition: 200ms
+}
+.check:active{
+  box-shadow:1px 1px 3px 1px black,-1px -1px 3px 1px rgb(245, 245, 245);
+  
+  transition: 0ms;
+}
+.outputDiv{
+padding: 1rem;
+margin-top: 1rem;
+border: 2px solid var(--primary-color);
+max-width: 600px;
+}
 
