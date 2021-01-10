@@ -1,64 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   --primary-color: rgb(30, 90, 160);
   --secondary-color: rgb(173, 169, 169);
 }
 .App {
-  font-family: sans-serif;
   text-align: center;
-margin-top: 20vh;
+  margin-top: 20vh;
 }
-body{
-  background-color:var(--secondary-color);
+body {
+  background-color: var(--secondary-color);
 }
-h1{
+h1 {
   color: var(--primary-color);
 }
-input{
+input {
   padding: 0.5rem;
   border-radius: 0.5rem;
   border: 1px solid black;
   margin-top: 1rem;
-  
 }
-.check{
-font-weight: 700;
-padding: 0.5rem 1rem;
-border-radius:0.5rem;
-background-color: rgb(173, 169, 169) ;
-border:none;
-outline: none;
-margin: 1rem 1rem;
-color: var(--primary-color);
-box-shadow: 2px 2px 5px 1px black,-2px -2px 5px 1px rgb(245, 245, 245)
+.check {
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: rgb(173, 169, 169);
+  border: none;
+  outline: none;
+  margin: 1rem 1rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  box-shadow: 2px 2px 5px 1px black, -2px -2px 5px 1px rgb(245, 245, 245);
 }
 
-.check:hover{
+.check:hover {
   color: white;
-  transition: 200ms
+  transition: 200ms;
 }
-.check:active{
-  box-shadow:1px 1px 3px 1px black,-1px -1px 3px 1px rgb(245, 245, 245);
-  
+.check:active {
+  box-shadow: 1px 1px 3px 1px black, -1px -1px 3px 1px rgb(245, 245, 245);
+
   transition: 0ms;
 }
-img{
-  background-color: var(--secondary-color)
+img {
+  background-color: var(--secondary-color);
 }
 
-.outputText{
-padding: 1rem;
-border: 2px solid var(--primary-color);
-border-radius: 1rem;
-max-width: 600px;
-margin: auto;
+.outputText {
+  padding: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 1rem;
+  max-width: 600px;
+  margin: auto;
 }
-@media screen  and  (max-width:600px){
-.App{
-  margin-top:1rem;
+@media screen and (max-width: 600px) {
+  .App {
+    margin-top: 1rem;
+  }
 }
-}
-
