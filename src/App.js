@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles.css";
 import clock from "./newclock.gif";
 
-var date, finalOutput;
+let date, finalOutput;
 
 const monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
@@ -24,17 +24,17 @@ export default function App() {
   }
 
   function checkPalindrome() {
-    var inputDateArray = date.split("-");
-    var inputYear = inputDateArray[0];
-    var inputMonth = inputDateArray[1];
-    var inputDate = inputDateArray[2];
+    let inputDateArray = date.split("-");
+    let inputYear = inputDateArray[0];
+    let inputMonth = inputDateArray[1];
+    let inputDate = inputDateArray[2];
 
-    var flag = checkDiffCombo(inputYear, inputMonth, inputDate);
+    let flag = checkDiffCombo(inputYear, inputMonth, inputDate);
 
     if (flag) {
       finalOutput = `Yayy! Your birthday is a palindrome in ${flag} format`;
     } else {
-      var nextDate = nextPalCheck(inputDate, inputMonth, inputYear);
+      let nextDate = nextPalCheck(inputDate, inputMonth, inputYear);
       
       finalOutput = `Oh noo! Your birthday is not a palindrome in any format. The nearest palindrome date is ${nextDate[0]}. You missed by ${nextDate[1]} days`;
     }
@@ -42,10 +42,10 @@ export default function App() {
   }
 
   function checkDiffCombo(yyyy, mm, dd) {
-    var format1 = yyyy + mm + dd;
-    var format2 = dd + mm + yyyy;
-    var format3 = mm + dd + yyyy.substring(2);
-    var format4 = Number(mm) + dd + yyyy;
+    let format1 = yyyy + mm + dd;
+   let format2 = dd + mm + yyyy;
+    let format3 = mm + dd + yyyy.substring(2);
+    let format4 = Number(mm) + dd + yyyy;
 
     if (itisPalindrome(format1)) {
       return `${yyyy}-${mm}-${dd}`;
@@ -61,8 +61,8 @@ export default function App() {
   }
 
   function itisPalindrome(combo) {
-    var length = Math.floor(combo.length / 2);
-    for (var i = 0; i < length; i++) {
+    let length = Math.floor(combo.length / 2);
+    for (let i = 0; i < length; i++) {
       if (combo[i] !== combo[combo.length - (i + 1)]) {
         return false;
       }
@@ -71,12 +71,12 @@ export default function App() {
   }
 
   function nextPalCheck(date, month, year) {
-    var date1 = Number(date);
-    var month1 = Number(month);
-    var year1 = Number(year);
-    var date2 = Number(date);
-      var month2 = Number(month);
-      var year2= Number(year);
+    let date1 = Number(date);
+    let month1 = Number(month);
+    let year1 = Number(year);
+   let date2 = Number(date);
+     let month2 = Number(month);
+      let year2= Number(year);
 
     //for checking ahead of input DOB
     for (let i = 1; i > 0; i++) {
@@ -90,7 +90,7 @@ export default function App() {
         }
       }
 
-      var date1String = date1.toString(),
+      let date1String = date1.toString(),
         month1String = month1.toString(),
         year1String = year1.toString();
 
